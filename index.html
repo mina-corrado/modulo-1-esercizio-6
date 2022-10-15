@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .fa-solid.fa-arrow-up{
+        transform: rotate(45deg);
+    }
+    .container{
+        position: relative;
+        background-image: url('./825716941387441.png');
+        width: 502px;
+        height: 680px;
+    }
+    .container button.tastorosso {
+        background-color: red;
+        border-radius: 40px;
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        color: #fff;
+        padding: 20px;
+    }
+    .container .buttons-bottom {
+        position: absolute;
+        bottom: 40px;
+        padding: 40px;
+    }
+
+    .container .buttons-bottom button {
+        padding: 10px;
+        margin-right: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+    }
+
+    button {
+        border: 0;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        margin-left: 20px;
+        margin-top: 35px;
+        width: calc(502px - 30px);
+        height: calc(680px - 50px);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 35px;
+        display: none;
+    }
+    .container:hover .overlay {
+        display: inline-block;
+    }
+
+</style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="overlay">
+            <button class="tastorosso">Save</button>
+            <div class="buttons-bottom">
+                <button><i class="fa-solid fa-arrow-up"></i><span>&nbsp;</span>westwingn...</button>
+                <button><i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></button>
+                <button>...</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
